@@ -1,1 +1,69 @@
-// Начните писать стили здесь
+//**global**
+// variables
+
+@import "./variables.scss";
+
+// fonts
+
+@import "./fonts.scss";
+
+// global
+
+@import "./reboot.scss";
+
+// Utils
+@import "./utils.scss";
+
+// container
+@import "./container.scss";
+
+//**style of elements
+// button
+
+@import "./bloks/button.scss";
+
+//**style blocks
+// header
+@import "./bloks/header.scss";
+
+// promo
+@import "./bloks/promo.scss";
+
+// categories
+@import "./bloks/categories.scss";
+
+// categories
+@import "./bloks/top-weecks.scss";
+
+// categories
+@import "./bloks/about.scss";
+
+// categories
+@import "./bloks/reviews.scss";
+
+// categories
+@import "./bloks/contacts.scss";
+
+// form-hero
+@import "./bloks/form-hero.scss";
+
+// form button
+@import "./bloks/form-button.scss";
+
+// form button
+@import "./bloks/form-main.scss";
+
+// menu
+@import "./bloks/menu.scss";
+
+// form section page
+
+@import "./bloks/form.scss";
+
+// catalog section catalog page
+
+@import "./bloks/catalog.scss";
+
+// footer section
+
+@import "./bloks/footer.scss";

@@ -1,0 +1,165 @@
+.categories {
+  margin-bottom: 31px;
+
+  position: relative;
+
+  &::after {
+    @media (min-width: $vp-768) {
+      position: absolute;
+      content: "";
+      background-image: url("../img/categories/zigzag-fill-desktop.svg");
+      background-repeat: repeat-x;
+      width: 100%;
+      height: 24px;
+      bottom: -8px;
+      left: 0;
+    }
+
+    margin-bottom: 7px;
+
+    @media (min-width: $vp-1024) {
+      background-size: 1250px 34px;
+
+      width: 1250px;
+      height: 34px;
+      bottom: -11px;
+      left: 12px;
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 115px;
+  }
+}
+
+.categories-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#63d1bb 50%, #56c3b2 50%);
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+
+    padding: 0 50px;
+
+    background: transparent;
+  }
+}
+
+.categories-list-item {
+  @media (min-width: $vp-768) {
+    min-width: 50%;
+  }
+}
+
+.categories-list-link--interior {
+  text-decoration: none;
+
+  display: block;
+
+  font-family: $ff-opensans;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-default-white;
+  padding: 24px 10px 31px 30px;
+  background-color: $color-downy;
+
+  @media (min-width: $vp-768) {
+    padding: 24px 1% 10% 30px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 29px 1% 10% 40px;
+  }
+}
+
+.categories-list-link--toys {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  font-family: $ff-opensans;
+  font-size: 19px;
+  line-height: 24px;
+  color: $color-default-white;
+  padding: 24px 10px 31px 30px;
+  background-color: $color-puerto-rico;
+
+  @media (min-width: $vp-768) {
+    padding: 24px 1% 10% 30px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 30px 1% 10% 36px;
+  }
+}
+
+.categories-list-link--text {
+  max-width: 60%;
+
+  @media (min-width: $vp-768) {
+    max-width: 41%;
+  }
+
+  @media (min-width: $vp-1024) {
+    max-width: 35%;
+  }
+}
+
+.categories-list-link--interior .categories-list-item--img {
+  position: relative;
+
+  display: block;
+  align-self: end;
+
+  &::before {
+    position: absolute;
+    content: url("../img/categories/interior.svg");
+    opacity: 0.5;
+    width: 40px;
+    height: 62px;
+
+    right: 36px;
+    top: 50%;
+    transform: translateY(-70%);
+  }
+}
+
+.categories-list-link--toys .categories-list-item--img {
+  position: relative;
+
+  display: block;
+  align-self: end;
+
+  &::before {
+    position: absolute;
+    content: url("../img/categories/toy.svg");
+    opacity: 0.5;
+    width: 60px;
+    height: 62px;
+
+    right: 27px;
+    top: 50%;
+    transform: translateY(-70%);
+  }
+}
+
+.categories-list-link:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}
+
+.categories-list-link:hover::before {
+  opacity: 0.7;
+}
+
+.categories-list-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.categories-list-link:active::before {
+  opacity: 0.3;
+}

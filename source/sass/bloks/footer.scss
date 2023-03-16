@@ -1,0 +1,125 @@
+.footer {
+  background-color: $color-white-smoke;
+}
+
+// footer wrapper
+
+.footer__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border-color: $color-default-white;
+
+  padding: 30px 30px 23px;
+
+  align-items: center;
+
+  // footer lines
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 80px;
+    width: calc(100% - 40px);
+    border: 1px solid $color-gainsboro;
+    left: 20px;
+
+    //tablet footer
+
+    @media (min-width: $vp-768) {
+      content: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+}
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: $vp-768) {
+    display: block;
+
+    margin-right: auto;
+  }
+}
+
+//footer social list
+
+.footer__social-list {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 55px;
+  list-style: none;
+
+  max-width: 129px;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
+}
+
+// footer ico condition
+
+.footer__img {
+  fill: $color-nero-black;
+}
+
+.footer__img:hover {
+  fill: $color-puerto-rico;
+}
+
+.footer__img:active {
+  opacity: 0.3;
+}
+
+//footer copyright
+
+.footer__link {
+  text-decoration: none;
+  color: $color-charcoal;
+  display: flex;
+
+  align-items: center;
+
+  max-width: 320px;
+
+  @media (min-width: $vp-768) {
+    margin-left: auto;
+  }
+}
+
+.footer__link-text {
+  font-family: $ff-opensans;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-default-black;
+
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.footer__link-img {
+  fill: $color-downy;
+
+  opacity: 0.8;
+}
+
+.footer__link:hover .footer__link-img {
+  opacity: 1;
+}
+
+.footer__link:active .footer__link-img {
+  opacity: 0.4;
+}

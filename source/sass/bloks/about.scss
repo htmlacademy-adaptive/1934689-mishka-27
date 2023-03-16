@@ -1,0 +1,121 @@
+.about {
+  padding-top: 31px;
+  margin-bottom: 31px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 183px;
+  }
+}
+
+.about__title {
+  font-family: $ff-opensans;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $color-default-black;
+  margin-bottom: 28px;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-bottom: 42px;
+  }
+}
+
+.about__list {
+  list-style: none;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 19%;
+  }
+}
+
+.about__list-item {
+  position: relative;
+  font-family: $ff-opensans;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $color-default-black;
+  padding: 54px 20px 15px 1px;
+  margin-bottom: 30px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+
+    font-size: 20px;
+
+    padding: 57px 20px 0 0;
+
+    max-width: 370px;
+  }
+}
+
+.about__list-item--ecology {
+  &::before {
+    position: absolute;
+    content: url("../img/about/ecology.svg");
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 38px;
+  }
+}
+
+.about__list-item--style {
+  &::before {
+    position: absolute;
+    content: url("../img/about/style.svg");
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 27px;
+  }
+}
+
+.about__list-item--like {
+  &::before {
+    position: absolute;
+    content: url("../img/about/like.svg");
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 27px;
+  }
+}
+
+.about__list-item--love {
+  &::before {
+    position: absolute;
+    content: url("../img/about/love.svg");
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 34px;
+  }
+}
+
+.about__list-item--nativ {
+  &::before {
+    position: absolute;
+    content: url("../img/about/nativ.svg");
+    top: 0;
+    left: 0;
+    width: 55px;
+    height: 23px;
+  }
+}
+
+.about__list-item--gift {
+  &::before {
+    position: absolute;
+    content: url("../img/about/gift.svg");
+    top: 0;
+    left: 0;
+    width: 33px;
+    height: 32px;
+  }
+}
