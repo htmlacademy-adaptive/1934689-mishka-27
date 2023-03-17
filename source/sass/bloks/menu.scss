@@ -45,7 +45,7 @@
 
 .menu .menu__list {
   @media (min-width: $vp-768) {
-    min-width: 50%;
+    min-width: 52%;
 
     font-size: 15px;
   }
@@ -79,6 +79,7 @@
     flex-wrap: wrap;
 
     align-items: center;
+    padding: 33px 0 32px 0;
 
     grid-area: user;
 
@@ -101,7 +102,7 @@
       background-color: $color-default-black;
       opacity: 0.1;
       top: 0;
-      left: 23%;
+      left: 23.2%;
     }
   }
 }
@@ -161,7 +162,6 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding: 33px 0 32px 0;
     max-width: 186px;
     width: 100%;
   }
@@ -169,7 +169,7 @@
 
 .menu__user-list-ico--cart {
   @media (min-width: $vp-768) {
-    left: -48px;
+    left: -52px;
   }
 }
 
@@ -194,7 +194,13 @@
     border: none;
     padding: 0;
 
+    font-size: 15px;
+
     max-width: 185px;
+  }
+
+  @media (min-width: $vp-1024) {
+    font-size: 17px;
   }
 }
 
@@ -223,9 +229,9 @@
   }
 }
 
-.menu__user-list--search {
-  padding: 36px 32px 34px;
-}
+// .menu__user-list--search {
+//   padding: 36px 32px 34px;
+// }
 
 .menu__promo-list-item {
   display: block;

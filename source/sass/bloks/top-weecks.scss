@@ -22,16 +22,35 @@
       background-image: url("../img/top-weecks/tablet/zigzag-line.svg");
       background-size: 772px 17px;
       height: 17px;
-      margin-top: 49px;
+      margin-top: 53px;
+      margin-left: 29px;
+    }
+
+    @media (min-width: $vp-1024) {
+      margin: 0 auto;
+
+      background-size: 1050px 23px;
+      background-position: 0 0;
+
+      width: 1050px;
+      height: 19px;
+
+      position: absolute;
+
+      bottom: -42%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   @media (min-width: $vp-768) {
-    padding-top: 34px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $vp-1024) {
     padding-top: 0;
+
+    margin-bottom: 238px;
   }
 }
 
@@ -39,6 +58,10 @@
   display: flex;
   align-items: center;
   margin-bottom: 50px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 38px;
+  }
 
   @media (min-width: $vp-1024) {
     margin-bottom: 35px;
@@ -83,10 +106,10 @@
   @media (min-width: $vp-768) {
     grid-area: label;
     margin-bottom: 0;
-    margin-right: unset;
     margin-left: auto;
     max-width: 100px;
     text-align: center;
+    margin-right: 13px;
   }
 
   @media (min-width: $vp-1024) {
@@ -108,7 +131,7 @@
     grid-template-areas:
       "content picture"
       "bottom picture";
-    row-gap: 12%;
+    row-gap: 13%;
     column-gap: 6%;
   }
 
@@ -117,10 +140,10 @@
     grid-template-areas:
       "content"
       "bottom ";
-    row-gap: 12%;
+    row-gap: 28%;
     column-gap: unset;
-    max-width: 300px;
-    margin-left: 180px;
+    max-width: 292px;
+    margin-left: 176px;
   }
 }
 
@@ -143,6 +166,12 @@
   @media (min-width: $vp-768) {
     font-size: 17px;
     line-height: 30px;
+
+    margin-bottom: 35px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 51px;
   }
 }
 
@@ -159,6 +188,10 @@
 .top-weecks__product-features-wrapper {
   display: flex;
   border-bottom: 1px solid $color-whisper;
+
+  @media (min-width: $vp-768) {
+    padding: 10px 0;
+  }
 }
 
 .top-weecks__product-description,
@@ -175,6 +208,12 @@
 
   max-width: 100px;
   width: 100%;
+
+  @media (min-width: $vp-768) {
+    max-width: 96px;
+
+    padding: 0;
+  }
 }
 
 .top-weecks__product-meaning {
@@ -182,20 +221,25 @@
 
   max-width: 160px;
   width: 100%;
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+  }
 }
 
 .top-weecks__wrapper-img {
   @media (min-width: $vp-768) {
     grid-area: picture;
     width: 100%;
+    margin-top: 12px;
   }
 
   @media (min-width: $vp-1024) {
     position: absolute;
-    right: -19%;
-    top: -12%;
+    right: 4.5%;
+    top: -15%;
     z-index: -1;
-    width: 100%;
+    width: 525px;
   }
 }
 
@@ -221,6 +265,10 @@
   @media (min-width: $vp-768) {
     grid-area: bottom;
   }
+
+  @media (min-width: $vp-1024) {
+    width: 100%;
+  }
 }
 
 .top-weecks__product-total {
@@ -230,12 +278,16 @@
   margin-bottom: 26px;
 
   @media (min-width: $vp-768) {
-    line-height: 24px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 27px;
   }
 }
 
 .top-weecks__button {
   @media (min-width: $vp-768) {
-    padding: 16px 86px;
+    padding: 14px 99px 12px;
   }
 }

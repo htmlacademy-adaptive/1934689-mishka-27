@@ -16,7 +16,7 @@
       z-index: 3;
     }
 
-    @media (min-width: $vp-1024) {
+    @media (min-width: $vp-768) {
       top: 88px;
     }
   }
@@ -46,11 +46,11 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 323px 1fr;
     grid-template-areas:
       "logo  user"
       "main-menu  delivery";
-    row-gap: 22px;
+    row-gap: 18px;
   }
 
   @media (min-width: $vp-1024) {
@@ -69,9 +69,7 @@
     display: block;
     grid-area: logo;
 
-    padding: 20px 31px 20px 0;
-
-    border-right: 1px solid $color-very-light-grey;
+    padding: 22px 31px 20px 0;
   }
 
   @media (min-width: $vp-1024) {
@@ -85,6 +83,10 @@
 // header logo
 
 .header__logo {
+  @media (min-width: $vp-768) {
+    width: 113px;
+  }
+
   @media (min-width: $vp-1024) {
     width: 150px;
     padding-top: 4px;
@@ -197,7 +199,7 @@
   display: none;
 
   @media (min-width: $vp-768) {
-    display: block;
+    display: inline-flex;
 
     grid-area: delivery;
 
@@ -209,9 +211,7 @@
     line-height: 24px;
 
     color: $color-charcoal;
-  }
 
-  @media (min-width: $vp-1024) {
-    font-size: 15px;
+    margin-left: auto;
   }
 }

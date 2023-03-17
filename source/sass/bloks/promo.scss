@@ -4,7 +4,7 @@
   @media (min-width: $vp-768) {
     padding: 0;
     margin: 0;
-    margin-bottom: 31.4%;
+    margin-bottom: 31.1%;
   }
 }
 
@@ -18,7 +18,7 @@
   @media (min-width: $vp-768) {
     max-width: unset;
 
-    margin-top: -69px;
+    margin-top: -65px;
   }
 }
 
@@ -39,28 +39,23 @@
 
   @media (min-width: $vp-768) {
     font-size: 43px;
-    line-height: 50px;
+    line-height: 116%;
     min-width: 668px;
 
-    margin-top: -78%;
+    margin-top: -89%;
   }
 
   @media (min-width: $vp-1024) {
     font-size: 53px;
     line-height: 57px;
 
-    margin-top: -57%;
+    margin-top: -56.5%;
   }
 }
 
 .promo__product {
   @media (min-width: $vp-768) {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (min-width: $vp-1024) {
     width: 1150px;
     height: 746px;
   }

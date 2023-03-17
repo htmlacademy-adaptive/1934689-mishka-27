@@ -37,7 +37,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    justify-items: center;
+
+    padding: 49px 50px 23px;
   }
 }
 
@@ -62,7 +63,7 @@
   margin-bottom: 55px;
   list-style: none;
 
-  max-width: 129px;
+  max-width: 139px;
   width: 100%;
 
   @media (min-width: $vp-768) {
