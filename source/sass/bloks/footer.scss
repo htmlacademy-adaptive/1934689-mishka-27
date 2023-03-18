@@ -56,6 +56,18 @@
   }
 }
 
+.footer__logo-link {
+  color: $color-default-black;
+}
+
+.footer__logo:hover .footer__logo-link {
+  color: #46c1ae;
+}
+
+.footer__logo:active .footer__logo-link {
+  opacity: 0.5;
+}
+
 //footer social list
 
 .footer__social-list {

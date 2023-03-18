@@ -42,7 +42,7 @@
   &::after {
     content: "";
     display: block;
-    background-image: url("../img/top-weecks/zigzag-line.svg");
+    background-image: url("../img/top-weecks/mobile/zigzag-line.svg");
     background-repeat: repeat-x;
     background-position: 8px 0;
     background-size: 320px 7px;
@@ -50,24 +50,32 @@
     height: 6px;
     margin-top: 45px;
 
-    @media (min-width: 768px) {
+    @media (min-width: $vp-768) {
       background-image: url("../img/top-weecks/tablet/zigzag-line.svg");
       background-size: 772px 17px;
       height: 17px;
-      margin-top: 49px;
+      margin-top: 53px;
     }
 
-    margin-bottom: 100px;
+    @media (min-width: $vp-1024) {
+      margin: 0 auto;
 
-    @media (min-width: $vp-768) {
-      margin-bottom: 68px;
-      margin-top: 69px;
+      background-size: 1050px 23px;
       background-position: 0 0;
+
+      width: 1050px;
+      height: 24px;
+
+      position: absolute;
+
+      bottom: -20%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 72px;
+    margin-bottom: 160px;
   }
 }
 

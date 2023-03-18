@@ -4,6 +4,12 @@
   @media (min-width: $vp-768) {
     padding: 0;
     margin: 0;
+    margin-bottom: 47.1%;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 0;
+    margin: 0;
     margin-bottom: 31.1%;
   }
 }
