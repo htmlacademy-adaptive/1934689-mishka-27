@@ -40,6 +40,10 @@
 
     padding: 49px 50px 23px;
   }
+
+  @media (min-width: $vp-1024) {
+    padding: 49px 50px 23px 50px;
+  }
 }
 
 .footer__logo {
@@ -68,6 +72,11 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: -4px;
+    margin-left: 63px;
   }
 }
 
