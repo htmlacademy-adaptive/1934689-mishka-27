@@ -22,8 +22,7 @@
     display: grid;
     grid-template-areas:
       "title button"
-      "text text"
-      "author pagination";
+      "slide slide";
     column-gap: 15%;
     padding-top: 82px;
     padding-bottom: 17px;
@@ -52,9 +51,10 @@
 
     @media (min-width: $vp-768) {
       background-image: url("../img/top-weecks/tablet/zigzag-line.svg");
-      background-size: 772px 17px;
+      background-size: 771px 17px;
+      background-position: -2px 0;
       height: 17px;
-      margin-top: 53px;
+      margin-top: 68px;
     }
 
     @media (min-width: $vp-1024) {
@@ -72,6 +72,10 @@
       left: 50%;
       transform: translateX(-50%);
     }
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 69px;
   }
 
   @media (min-width: $vp-1024) {
@@ -100,6 +104,14 @@
   }
 }
 
+.reviews__slide {
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    grid-area: slide;
+  }
+}
+
 .reviews__text {
   font-family: $ff-opensans;
   font-weight: 400;
@@ -112,8 +124,6 @@
     font-size: 17px;
     line-height: 30px;
 
-    grid-area: text;
-
     padding-top: 39px;
     margin-bottom: 60px;
   }
@@ -125,10 +135,6 @@
 
 .reviews__wrapper-author {
   margin-bottom: 30px;
-
-  @media (min-width: $vp-768) {
-    grid-area: author;
-  }
 }
 
 .reviews__author-name {
@@ -162,7 +168,9 @@
   margin-bottom: 38px;
 
   @media (min-width: $vp-768) {
-    grid-area: pagination;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 
     display: flex;
     justify-content: space-between;

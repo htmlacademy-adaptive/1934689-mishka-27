@@ -3,6 +3,37 @@
 
   position: relative;
 
+  background-image: url("../img/categories/mobile/promo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 373px;
+  background-position: center -18px;
+
+  object-fit: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/categories/mobile/promo-mobile@2x.jpg");
+  }
+
+  @media (min-width: $vp-768) {
+    background-image: url("../img/categories/tablet/promo-tablet@1x.jpg");
+    background-size: 768px 746px;
+    background-position: 0 -68px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/categories/tablet/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $vp-1024) {
+    background-image: url("../img/categories/descktop/promo-desktop@1x.jpg");
+    background-size: 1150px 746px;
+    background-position: 0 -65px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/categories/descktop/promo-desktop@2x.jpg");
+    }
+  }
+
   &::after {
     @media (min-width: $vp-768) {
       position: absolute;
@@ -36,6 +67,49 @@
   }
 }
 
+// container
+
+.categories .container {
+  padding: 0;
+}
+
+// categiries title
+
+.categories__title {
+  font-family: $ff-opensans;
+  font-size: 27px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  color: $color-default-black;
+
+  max-width: 260px;
+
+  padding-top: 72px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+
+    max-width: 668px;
+
+    padding-top: 88px;
+    margin-bottom: 372px;
+  }
+
+  @media (min-width: $vp-1024) {
+    font-size: 53px;
+    line-height: 57px;
+
+    max-width: 700px;
+
+    padding-top: 94px;
+    margin-bottom: 355px;
+  }
+}
+
 .categories-list {
   list-style: none;
 
@@ -65,6 +139,8 @@
 }
 
 .categories-list-link--interior {
+  position: relative;
+
   text-decoration: none;
 
   display: block;
@@ -73,15 +149,34 @@
   font-size: 19px;
   line-height: 24px;
   color: $color-default-white;
-  padding: 24px 10px 31px 30px;
+  padding: 24px 100px 31px 30px;
   background-color: $color-downy;
 
+  &::before {
+    position: absolute;
+    content: url("../img/categories/interior.svg");
+    opacity: 0.5;
+    width: 40px;
+    height: 62px;
+
+    right: 36px;
+    bottom: 20px;
+
+    @media (min-width: $vp-768) {
+      bottom: 28px;
+    }
+
+    @media (min-width: $vp-1024) {
+      bottom: 36px;
+    }
+  }
+
   @media (min-width: $vp-768) {
-    padding: 29px 1% 13% 36px;
+    padding: 29px 40% 13% 36px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 29px 1% 10% 40px;
+    padding: 29px 60% 10% 40px;
   }
 }
 
@@ -95,15 +190,35 @@
   font-size: 19px;
   line-height: 24px;
   color: $color-default-white;
-  padding: 24px 10px 31px 30px;
+  padding: 24px 120px 31px 30px;
   background-color: $color-puerto-rico;
 
+  &::before {
+    position: absolute;
+    content: url("../img/categories/toy.svg");
+    opacity: 0.5;
+    width: 60px;
+    height: 62px;
+
+    right: 27px;
+    bottom: 20px;
+
+    @media (min-width: $vp-768) {
+      bottom: 27px;
+      right: 83px;
+    }
+
+    @media (min-width: $vp-1024) {
+      bottom: 37px;
+    }
+  }
+
   @media (min-width: $vp-768) {
-    padding: 29px 1% 13% 36px;
+    padding: 29px 40% 13% 36px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 30px 1% 10% 36px;
+    padding: 30px 60% 10% 36px;
   }
 }
 
@@ -116,44 +231,6 @@
 
   @media (min-width: $vp-1024) {
     max-width: 35%;
-  }
-}
-
-.categories-list-link--interior .categories-list-item--img {
-  position: relative;
-
-  display: block;
-  align-self: end;
-
-  &::before {
-    position: absolute;
-    content: url("../img/categories/interior.svg");
-    opacity: 0.5;
-    width: 40px;
-    height: 62px;
-
-    right: 36px;
-    top: 50%;
-    transform: translateY(-70%);
-  }
-}
-
-.categories-list-link--toys .categories-list-item--img {
-  position: relative;
-
-  display: block;
-  align-self: end;
-
-  &::before {
-    position: absolute;
-    content: url("../img/categories/toy.svg");
-    opacity: 0.5;
-    width: 60px;
-    height: 62px;
-
-    right: 27px;
-    top: 50%;
-    transform: translateY(-70%);
   }
 }
 
