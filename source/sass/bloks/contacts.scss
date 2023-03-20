@@ -112,6 +112,10 @@
 }
 
 .contacts__mail-adress {
+  position: relative;
+
+  cursor: pointer;
+
   font-family: $ff-opensans;
   font-weight: 400;
   font-size: 14px;
@@ -119,19 +123,26 @@
   color: $color-charcoal;
 
   @media (min-width: $vp-768) {
-    position: relative;
     font-size: 17px;
-
-    &::after {
-      position: absolute;
-      content: "";
-      top: 29px;
-      left: 0;
-      height: 1px;
-      width: 100%;
-      background-color: #62d1ba;
-    }
   }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 29px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color-downy2;
+  }
+}
+
+.contacts__mail-adress:hover {
+  color: $color-downy2;
+}
+
+.contacts__mail-adress:active {
+  opacity: 0.3;
 }
 
 .contacts__adress-title {

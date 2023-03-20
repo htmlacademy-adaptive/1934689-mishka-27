@@ -1,0 +1,127 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal__content {
+  width: 320px;
+  height: 336px;
+  background-color: $color-default-white;
+  border: 1px solid $color-silver;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  padding: 29px 30px 46px;
+
+  @media (min-width: $vp-768) {
+    width: 566px;
+    height: 336px;
+    padding: 38px 92px 46px;
+  }
+}
+
+.modal__title {
+  font-family: $ff-opensans;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-default-black;
+
+  margin-bottom: 14px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 11px;
+  }
+}
+
+// modal fildset
+
+.modal__size-filter {
+  border: none;
+
+  font-family: $ff-opensans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: $color-charcoal;
+
+  text-align: center;
+}
+
+.modal__button-list {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 260px;
+  width: 100%;
+  gap: 7px;
+
+  margin-top: 22px;
+  margin-bottom: 31px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal__button-item {
+  background: #ffffff;
+  border: 2px solid rgb(237, 237, 237, 0.3);
+  padding: 18px 22px;
+
+  cursor: pointer;
+}
+
+.modal__button-item:hover {
+  border: 2px solid rgb(199, 199, 199, 0.3);
+}
+
+.modal__input-title {
+  font-family: $ff-opensans;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-charcoal;
+}
+
+// hidden radiobox button
+
+.modal__button-input[type="radio"] {
+  display: none;
+}
+
+// form radio box condition
+
+.modal__button-input:checked + .modal__button-item {
+  border: 2px solid #62d1ba;
+}
+
+.modal__submit-button {
+  font-size: 17px;
+  line-height: 16px;
+
+  color: #ffffff;
+
+  background: #63d1bb;
+
+  border: none;
+}
