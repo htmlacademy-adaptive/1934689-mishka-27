@@ -61,10 +61,14 @@
 
 @import "./bloks/catalog.scss";
 
+// production section catalog page
+
+@import "./bloks/production.scss";
+
 // footer section
 
 @import "./bloks/footer.scss";
 
-// footer section
+// modal
 
 @import "./bloks/modal.scss";
