@@ -82,37 +82,24 @@
   }
 }
 
-.modal__button-item {
-  background: #ffffff;
-  border: 2px solid rgb(237, 237, 237, 0.3);
-  padding: 18px 22px;
-
-  cursor: pointer;
-}
-
-.modal__button-item:hover {
-  border: 2px solid rgb(199, 199, 199, 0.3);
-}
-
 .modal__input-title {
-  font-family: $ff-opensans;
-  font-weight: 700;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  width: 100%;
+  display: block;
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $color-charcoal;
-}
-
-// hidden radiobox button
-
-.modal__button-input[type="radio"] {
-  display: none;
+  padding: 17px 18px 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
 }
 
 // form radio box condition
 
-.modal__button-input:checked + .modal__button-item {
-  border: 2px solid #62d1ba;
+.modal__button-input:checked + .modal__input-title {
+  border-color: #63d1bb;
 }
 
 .modal__submit-button {

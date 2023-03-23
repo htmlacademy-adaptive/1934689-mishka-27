@@ -9,11 +9,12 @@
   max-height: 256px;
 
   @media (min-width: $vp-768) {
-    margin-top: -67px;
     margin-bottom: 67px;
+    padding-top: 57px;
   }
 
   @media (min-width: $vp-1024) {
+    margin-top: 0;
     margin-bottom: 111px;
   }
 }
@@ -47,9 +48,15 @@
   list-style: none;
 
   @media (min-width: $vp-768) {
-    display: flex;
+    display: grid;
 
-    gap: 52px;
+    gap: 54px;
+  }
+
+  @media (min-width: $vp-1024) {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 54px;
   }
 }
 
@@ -57,13 +64,15 @@
   margin-bottom: 30px;
 
   @media (min-width: $vp-768) {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
     margin-bottom: 54px;
   }
 
   @media (min-width: $vp-1024) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
 
     margin-bottom: 27px;
   }
@@ -76,10 +85,13 @@
   display: flex;
   flex-direction: column;
 
-  padding: 28px 28px 27px;
+  width: 100%;
+  align-items: flex-start;
+
+  padding: 28px 27px 22px;
 
   @media (min-width: $vp-768) {
-    width: 50%;
+    padding: 27px 32px 23px;
   }
 
   @media (min-width: $vp-1024) {
@@ -128,44 +140,22 @@
 
   margin-bottom: 41px;
 
-  &::before {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: -20px;
-    width: 100%;
-    height: 1px;
-    background-color: $color-whisper;
-
-    @media (min-width: $vp-768) {
-      content: none;
-    }
-  }
-
   @media (min-width: $vp-768) {
     font-size: 15px;
   }
 }
 
 .catalog__price-wrapper {
-  position: relative;
-
+  border-top: 1px solid #ececec;
+  width: 100%;
+  padding-top: 24px;
+  margin-top: auto;
   display: flex;
-  align-items: center;
+  gap: 20px;
   justify-content: space-between;
 
   @media (min-width: $vp-768) {
     margin-top: auto;
-
-    &::before {
-      position: absolute;
-      content: "";
-      left: 0;
-      top: -20px;
-      width: 100%;
-      height: 1px;
-      background-color: $color-whisper;
-    }
   }
 
   @media (min-width: $vp-768) {

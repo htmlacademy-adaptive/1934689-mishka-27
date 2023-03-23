@@ -21,7 +21,7 @@
   <header class="header no-js">
     <div class="container header__wrapper">
       <!--header navigation block-->
-      <nav class="header__nav">
+      <nav class="header__nav  header__nav--darck">
         <!-- header logo block-->
         <div class="header__nav-top">
           <a class="header__logo-link-img" href="index.html" aria-label="переход на главную страницу.">
@@ -67,7 +67,7 @@
             </a>
           </li>
         </ul>
-        <ul class="header__promo">
+        <ul class="header__promo header__promo--darck">
           <li class="header__promo-item">
             <a class="header__promo-link" href="#">Новые поступления</a>
           </li>
@@ -211,11 +211,11 @@
               <img class="production__video" src="./img/catalog/video/video-mobile.jpg" width="260" height="150"
                 alt="видео производства изделий.">
             </picture>
-            <button class="production__video-button" type="button">
+            <a class="production__video-button" href="#">
               <svg class="production__button-ico" width="100" height="77">
                 <use href="./img/sprite.svg#play"></use>
               </svg>
-            </button>
+            </a>
           </div>
           <p class="production__text">
             По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
@@ -282,19 +282,19 @@
           <ul class="modal__button-list">
             <li class="modal__button-item">
               <label class="modal__button">
-                <input class="modal__button-input" type="radio" name="size" value="s" checked>
+                <input class="modal__button-input visually-hidden" type="radio" name="size" value="s" checked>
                 <span class="modal__input-title">s</span>
               </label>
             </li>
             <li class="modal__button-item">
               <label class="modal__button">
-                <input class="modal__button-input" type="radio" name="size" value="m">
+                <input class="modal__button-input visually-hidden" type="radio" name="size" value="m">
                 <span class="modal__input-title">m</span>
               </label>
             </li>
             <li class="modal__button-item">
               <label class="modal__button">
-                <input class="modal__button-input" type="radio" name="size" value="l">
+                <input class="modal__button-input visually-hidden" type="radio" name="size" value="l">
                 <span class="modal__input-title">l</span>
 
               </label>

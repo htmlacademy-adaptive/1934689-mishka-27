@@ -1,12 +1,12 @@
 .categories {
   margin-bottom: 31px;
+  background-color: #f9f9f9;
 
   position: relative;
 
   @media (min-width: $vp-768) {
     margin-bottom: 51px;
     background-color: $color-snow;
-    margin-top: -65px;
   }
 
   @media (min-width: $vp-1024) {

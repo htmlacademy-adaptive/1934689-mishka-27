@@ -82,13 +82,13 @@
     grid-template-columns: 1fr;
     grid-area: text;
 
-    margin-bottom: 86px;
+    margin-bottom: 32px;
   }
 }
 
 .contacts__data-wrapper {
   display: flex;
-  gap: 20%;
+  gap: 18%;
 
   @media (min-width: $vp-768) {
     gap: 24px;

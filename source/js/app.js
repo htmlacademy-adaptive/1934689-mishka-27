@@ -30,6 +30,7 @@ const modalButtons = document.querySelectorAll('.modal__open');
   modalButtons.forEach((button) => button.addEventListener('click', onModalButtonClick));
 
   modalCloseButton.addEventListener('click', () => {
+    evt.preventDefault();
     modal.classList.remove('modal-open');
   });
 

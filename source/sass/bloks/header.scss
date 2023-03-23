@@ -29,7 +29,7 @@
   padding-bottom: 22px;
 
   @media (min-width: $vp-768) {
-    padding-top: 0;
+    padding: 0;
   }
 }
 
@@ -46,18 +46,25 @@
 
   @media (min-width: $vp-768) {
     display: grid;
-    grid-template-columns: 323px 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "logo  user"
       "main-menu  delivery";
-    row-gap: 18px;
+
+    background-color: $color-snow;
   }
 
   @media (min-width: $vp-1024) {
-    grid-template-columns: 36% 1fr 33%;
+    grid-template-columns: 1.9fr 1fr 1.7fr;
     grid-template-areas:
       "main-menu logo  user"
       "promo . delivery";
+  }
+}
+
+.header__nav--darck {
+  @media (min-width: $vp-768) {
+    background-color: $color-white-smoke;
   }
 }
 
@@ -69,20 +76,23 @@
     display: block;
     grid-area: logo;
 
-    padding: 22px 31px 20px 0;
+    padding: 19px 31px 20px 50px;
+    background-color: $color-default-white;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0;
     margin: 0 auto;
-    margin-left: 71px;
+
     border: none;
+    padding: 43px 162px;
   }
 }
 
 // header logo
 
 .header__logo {
+  position: relative;
+
   @media (min-width: $vp-768) {
     width: 113px;
   }
@@ -90,6 +100,14 @@
   @media (min-width: $vp-1024) {
     width: 150px;
     padding-top: 4px;
+  }
+}
+
+.header__logo-link-img {
+  @media (min-width: $vp-1024) {
+    position: absolute;
+    top: 5px;
+    left: 43.2%;
   }
 }
 
@@ -213,6 +231,10 @@
     color: $color-charcoal;
 
     margin-left: auto;
+
+    padding-top: 22px;
+    padding-right: 50px;
+    padding-bottom: 9px;
   }
 
   @media (min-width: $vp-768) {
@@ -241,11 +263,14 @@
 
     display: flex;
     grid-area: main-menu;
+    padding-top: 10px;
+    padding-left: 50px;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 33px 0 32px 0;
+    padding: 33px 10px 32px 50px;
     justify-content: space-between;
+    background-color: $color-default-white;
 
     &::before {
       position: absolute;
@@ -255,7 +280,7 @@
       background-color: $color-default-black;
       opacity: 0.1;
       top: 0;
-      left: 49%;
+      left: 54%;
     }
   }
 }
@@ -268,7 +293,7 @@
 
 .header__menu .header__menu-item {
   @media (min-width: $vp-768) {
-    min-width: 52%;
+    min-width: 50%;
 
     font-size: 15px;
 
@@ -304,7 +329,7 @@
     flex-wrap: wrap;
 
     align-items: center;
-    padding: 33px 0 32px 0;
+    padding: 33px 50px 32px 10px;
 
     grid-area: user;
 
@@ -316,7 +341,11 @@
       background-color: $color-default-black;
       opacity: 0.1;
       top: 0;
-      left: -3px;
+      left: -13px;
+
+      @media (min-width: $vp-1024) {
+        left: -11px;
+      }
     }
 
     &::after {
@@ -327,8 +356,18 @@
       background-color: $color-default-black;
       opacity: 0.1;
       top: 0;
-      left: 23.2%;
+      left: 18.1%;
     }
+  }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 20px;
+    height: auto;
   }
 }
 
@@ -345,6 +384,15 @@
     grid-area: promo;
     z-index: 1;
     background-color: $color-snow;
+
+    padding: 22px 10px 9px 50px;
+    min-width: 377px;
+  }
+}
+
+.header__promo--darck {
+  @media (min-width: $vp-1024) {
+    background-color: $color-white-smoke;
   }
 }
 
@@ -382,7 +430,11 @@
 
 .header__user-link-search {
   @media (min-width: $vp-768) {
-    left: 29px;
+    left: 9px;
+  }
+
+  @media (min-width: $vp-1024) {
+    left: 2px;
   }
 }
 
