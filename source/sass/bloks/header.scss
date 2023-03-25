@@ -1,5 +1,6 @@
 .header {
   position: relative;
+  border-bottom: 1px solid $color-whisper;
 
   &::before {
     @media (min-width: $vp-768) {
@@ -25,8 +26,8 @@
 .header__wrapper {
   background-color: $color-default-white;
 
-  padding-top: 25px;
-  padding-bottom: 22px;
+  padding-top: 21px;
+  padding-bottom: 19px;
 
   @media (min-width: $vp-768) {
     padding: 0;
@@ -115,11 +116,11 @@
 
 .header__button {
   position: absolute;
-  right: 0;
+  right: 1px;
 
   display: block;
 
-  width: 24px;
+  width: 20px;
   height: 24px;
 
   background: transparent;

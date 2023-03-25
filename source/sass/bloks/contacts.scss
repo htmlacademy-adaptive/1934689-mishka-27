@@ -1,9 +1,14 @@
 .contacts {
-  margin-bottom: 39px;
+  margin-bottom: 40px;
+  padding-top: 3px;
 
   @media (min-width: $vp-1024) {
     margin-bottom: 102px;
   }
+}
+
+.contacts .container {
+  padding: 0;
 }
 
 .contacts__wrapper {
@@ -46,6 +51,7 @@
   line-height: 30px;
   color: $color-default-black;
   margin-bottom: 28px;
+  padding: 0 29px;
 
   @media (min-width: $vp-768) {
     position: relative;
@@ -69,7 +75,9 @@
   font-style: inherit;
 
   display: grid;
-  gap: 35px;
+  gap: 30px;
+
+  padding: 0 29px;
 
   @media (min-width: $vp-768) {
     grid-template-columns: 1fr 1fr;
@@ -88,7 +96,7 @@
 
 .contacts__data-wrapper {
   display: flex;
-  gap: 18%;
+  gap: 14%;
 
   @media (min-width: $vp-768) {
     gap: 24px;
@@ -176,7 +184,7 @@
   width: 100%;
   height: 454px;
   overflow: hidden;
-  margin: 0 auto 42px;
+  margin: 0 auto 41px;
 
   @media (min-width: $vp-768) {
     margin-bottom: 55px;
@@ -209,7 +217,12 @@
 }
 
 .contacts__button {
-  padding: 16px 38px;
+  padding: 14px 38px;
+  max-width: 260px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
 
   @media (min-width: $vp-768) {
     max-width: 230px;

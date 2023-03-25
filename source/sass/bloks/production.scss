@@ -71,9 +71,13 @@
 
     max-width: unset;
 
-    margin: 47px 57px 28px 26px;
+    margin: 47px 57px 28px 106px;
     padding-left: 0;
     padding-top: 49px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 47px 57px 28px 26px;
   }
 }
 
