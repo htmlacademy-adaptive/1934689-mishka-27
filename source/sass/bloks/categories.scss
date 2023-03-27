@@ -5,7 +5,7 @@
   position: relative;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 51px;
+    margin-bottom: 43px;
     background-color: $color-snow;
   }
 
@@ -49,7 +49,7 @@
   @media (min-width: $vp-1024) {
     background-image: url("../img/categories/descktop/promo-desktop@1x.jpg");
     background-size: 1150px 746px;
-    background-position: 0 -65px;
+    background-position: 0 -56px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/categories/descktop/promo-desktop@2x.jpg");
@@ -89,7 +89,7 @@
 
     max-width: 700px;
 
-    padding-top: 94px;
+    padding-top: 100px;
     margin-bottom: 355px;
   }
 }
@@ -147,7 +147,7 @@
     bottom: 20px;
 
     @media (min-width: $vp-768) {
-      bottom: 28px;
+      bottom: 35px;
     }
 
     @media (min-width: $vp-1024) {
@@ -190,7 +190,7 @@
 
     @media (min-width: $vp-768) {
       bottom: 27px;
-      right: 83px;
+      right: 33px;
     }
 
     @media (min-width: $vp-1024) {

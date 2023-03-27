@@ -7,12 +7,13 @@
 
   @media (min-width: $vp-1024) {
     position: relative;
+    margin-bottom: 103px;
   }
 }
 
 .production__wrapper {
   border: 1px solid $color-whisper;
-  padding: 22px 0 33px;
+  padding: 22px 0 29px;
 
   @media (min-width: $vp-768) {
     display: flex;
@@ -52,8 +53,8 @@
     content: url("../img/catalog/video/video.svg");
     width: 32px;
     height: 22px;
-    left: -63px;
-    bottom: 16px;
+    left: -58px;
+    bottom: 12px;
 
     @media (min-width: $vp-768) {
       bottom: 5px;
@@ -77,7 +78,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin: 47px 57px 28px 26px;
+    margin: 47px 85px 30px 26px;
   }
 }
 
@@ -86,7 +87,7 @@
   margin-bottom: 35px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 41px;
+    margin-bottom: -55px;
   }
 
   @media (min-width: $vp-1024) {
@@ -148,7 +149,7 @@
   line-height: 24px;
   color: $color-charcoal;
 
-  margin-left: 41px;
+  margin-left: 33px;
   margin-bottom: 41px;
 
   @media (min-width: $vp-768) {
@@ -156,13 +157,16 @@
 
     font-size: 15px;
 
-    margin-bottom: 41px;
+    margin-bottom: 49px;
+    margin-left: 39px;
   }
 
   @media (min-width: $vp-1024) {
     margin-right: 57px;
     margin-left: 26px;
     margin-bottom: 52px;
+
+    line-height: 29px;
   }
 }
 
@@ -180,14 +184,15 @@
 
     max-width: unset;
 
-    padding: 18px 207px;
-    width: 90%;
+    padding: 16px 207px;
+    width: 88%;
 
     font-size: 17px;
   }
 
   @media (min-width: $vp-1024) {
     max-width: 230px;
-    padding: 18px 30px;
+    padding: 16px 30px;
+    margin-right: 58px;
   }
 }
