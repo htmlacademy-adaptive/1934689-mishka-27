@@ -1,25 +1,31 @@
 .header {
   position: relative;
-  border-bottom: 1px solid $color-whisper;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
 
   &::before {
-    @media (min-width: $vp-768) {
-      position: absolute;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    min-height: 62px;
+    background-color: $color-snow;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
 
-      content: "";
-      background: #000000;
-      opacity: 0.1;
-      width: 100%;
-      height: 1px;
-      left: 0;
-      top: 79px;
+  @media (min-width: $vp-768) {
+    border: none;
+    overflow: hidden;
+  }
+}
 
-      z-index: 3;
-    }
-
-    @media (min-width: $vp-768) {
-      top: 88px;
-    }
+.header--catalog {
+  &::before {
+    background-color: $color-white-smoke;
   }
 }
 
@@ -31,6 +37,11 @@
 
   @media (min-width: $vp-768) {
     padding: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: flex;
   }
 }
 
@@ -51,12 +62,11 @@
     grid-template-areas:
       "logo  user"
       "main-menu  delivery";
-
-    background-color: $color-snow;
+    background-color: transparent;
   }
 
   @media (min-width: $vp-1024) {
-    grid-template-columns: 1.9fr 1fr 1.7fr;
+    grid-template-columns: 450px 1fr 401px;
     grid-template-areas:
       "main-menu logo  user"
       "promo . delivery";
@@ -77,15 +87,16 @@
     display: block;
     grid-area: logo;
 
-    padding: 19px 31px 20px 50px;
-    background-color: $color-default-white;
+    padding: 18px 31px 18px 50px;
+
+    z-index: 3;
   }
 
   @media (min-width: $vp-1024) {
     margin: 0 auto;
 
     border: none;
-    padding: 43px 162px;
+    min-width: 300px;
   }
 }
 
@@ -116,7 +127,7 @@
 
 .header__button {
   position: absolute;
-  right: 1px;
+  right: 30px;
 
   display: block;
 
@@ -233,13 +244,14 @@
 
     margin-left: auto;
 
-    padding-top: 22px;
+    padding-top: 9px;
     padding-right: 50px;
     padding-bottom: 9px;
+    z-index: 1;
   }
 
-  @media (min-width: $vp-768) {
-    z-index: 1;
+  @media (min-width: $vp-1024) {
+    padding-top: 21px;
   }
 }
 
@@ -254,35 +266,32 @@
   width: calc(100% + 40px);
 
   text-align: center;
-  z-index: 2;
+  z-index: 3;
 
   @media (min-width: $vp-768) {
     position: relative;
     width: unset;
-
     top: unset;
-
-    display: flex;
-    grid-area: main-menu;
-    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     padding-left: 50px;
+    background-color: transparent;
+    column-gap: 4px;
+    grid-area: main-menu;
   }
 
   @media (min-width: $vp-1024) {
-    padding: 33px 10px 32px 50px;
-    justify-content: space-between;
-    background-color: $color-default-white;
+    grid-template-columns: 184px 1fr;
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 100%;
-      background-color: $color-default-black;
-      opacity: 0.1;
-      top: 0;
-      left: 54%;
-    }
+    padding-left: 50px;
+    justify-content: space-between;
+    min-height: 88px;
+  }
+}
+
+.header__menu .header__menu-item:nth-child(2) {
+  @media (min-width: $vp-1024) {
+    margin-left: 31px;
   }
 }
 
@@ -326,49 +335,38 @@
 
     top: unset;
 
-    display: flex;
-    flex-wrap: wrap;
-
-    align-items: center;
-    padding: 33px 50px 32px 10px;
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    padding-right: 50px;
 
     grid-area: user;
 
     &::before {
       position: absolute;
       content: "";
-      width: 1px;
+      width: 200vw;
+      right: -100vw;
       height: 100%;
-      background-color: $color-default-black;
-      opacity: 0.1;
-      top: 0;
-      left: -13px;
+      background-color: $color-default-white;
+      border-bottom: 1px solid $color-whisper;
+      z-index: -1;
+    }
+  }
+
+  .header__user--border {
+    @media (min-width: $vp-768) {
+      box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 0 0 rgba(0, 0, 0, 0.1);
+      max-width: 68px;
 
       @media (min-width: $vp-1024) {
-        left: -11px;
+        max-width: unset;
       }
-    }
-
-    &::after {
-      position: absolute;
-      content: "";
-      width: 1px;
-      height: 100%;
-      background-color: $color-default-black;
-      opacity: 0.1;
-      top: 0;
-      left: 18.1%;
     }
   }
 
   @media (min-width: $vp-1024) {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-right: 50px;
-    padding-left: 20px;
-    height: auto;
+    background-color: transparent;
+    max-width: 100%;
   }
 }
 
@@ -379,12 +377,13 @@
 
   @media (min-width: $vp-1024) {
     display: flex;
+    flex-wrap: wrap;
     max-width: 316px;
     justify-content: space-between;
 
     grid-area: promo;
     z-index: 1;
-    background-color: $color-snow;
+    background-color: transparent;
 
     padding: 22px 10px 9px 50px;
     min-width: 377px;
@@ -426,16 +425,19 @@
 
   @media (min-width: $vp-768) {
     grid-area: search;
+    left: 0;
+    top: 36px;
+    transform: unset;
   }
 }
 
 .header__user-link-search {
   @media (min-width: $vp-768) {
-    left: 9px;
+    left: 23%;
   }
 
   @media (min-width: $vp-1024) {
-    left: 2px;
+    left: 33px;
   }
 }
 
@@ -445,14 +447,26 @@
   }
 
   @media (min-width: $vp-1024) {
-    max-width: 186px;
+    max-width: 250px;
     width: 100%;
+  }
+}
+
+.header__user-cart .header__user-link {
+  padding: 32px 0 27px 90px;
+
+  @media (min-width: $vp-768) {
+    padding: 32px 0 27px 68px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 34px 0 27px 68px;
   }
 }
 
 .header__user-link-cart {
   @media (min-width: $vp-768) {
-    left: -52px;
+    margin: 0 16px;
   }
 }
 
@@ -475,7 +489,7 @@
 
   @media (min-width: $vp-768) {
     border: none;
-    padding: 0;
+    padding: 21px 0 19px;
 
     font-size: 15px;
 
@@ -484,6 +498,14 @@
 
   @media (min-width: $vp-1024) {
     font-size: 17px;
+    padding: 34px 0 27px 0;
+    max-width: 200px;
+  }
+}
+
+.header__menu-link--border {
+  @media (min-width: $vp-1024) {
+    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -508,7 +530,7 @@
   @media (min-width: $vp-768) {
     border: none;
 
-    padding: 0;
+    min-height: 88px;
   }
 }
 

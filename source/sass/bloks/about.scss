@@ -2,12 +2,11 @@
   margin-bottom: 39px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 198px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $vp-1024) {
     margin-left: 175px;
-    margin-bottom: 202px;
   }
 }
 
@@ -39,7 +38,8 @@
   @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 19%;
+
+    padding-bottom: 38px;
   }
 
   @media (min-width: $vp-1024) {
@@ -58,13 +58,17 @@
   margin-bottom: 16px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 0;
-
+    margin-bottom: 51px;
     font-size: 20px;
+    line-height: 22px;
 
     padding: 58px 20px 0 0;
 
     max-width: 370px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 57px 20px 0 0;
   }
 }
 

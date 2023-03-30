@@ -39,7 +39,7 @@
   @media (min-width: $vp-768) {
     background-image: url("../img/categories/tablet/promo-tablet@1x.jpg");
     background-size: 768px 746px;
-    background-position: 0 -57px;
+    background-position: 0 -65px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/categories/tablet/promo-tablet@2x.jpg");
@@ -79,7 +79,7 @@
 
     max-width: 668px;
 
-    padding-top: 99px;
+    padding-top: 91px;
     margin-bottom: 371px;
   }
 
@@ -89,7 +89,7 @@
 
     max-width: 700px;
 
-    padding-top: 100px;
+    padding-top: 104px;
     margin-bottom: 355px;
   }
 }
@@ -102,6 +102,7 @@
   background: linear-gradient(#63d1bb 50%, #56c3b2 50%);
 
   @media (min-width: $vp-768) {
+    flex-wrap: wrap;
     flex-direction: row;
 
     padding: 0 50px;
@@ -199,7 +200,7 @@
   }
 
   @media (min-width: $vp-768) {
-    padding: 29px 40% 13% 36px;
+    padding: 30px 54% 15% 37px;
   }
 
   @media (min-width: $vp-1024) {
