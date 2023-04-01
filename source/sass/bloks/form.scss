@@ -74,7 +74,7 @@
 }
 
 .form__blanck--margin {
-  margin-bottom: 42px;
+  margin-bottom: 20px;
 
   @media (min-width: 768px) {
     margin-bottom: 68px;
@@ -242,7 +242,6 @@
 .form__radio-list {
   display: flex;
   flex-direction: column;
-  gap: 23px;
   list-style: none;
 
   @media (min-width: 768px) {
@@ -254,6 +253,7 @@
   position: relative;
   cursor: pointer;
   display: flex;
+  margin-bottom: 23px;
 }
 
 //  radiobox decorate
