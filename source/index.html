@@ -19,68 +19,70 @@
 <body class="page__body">
 
   <!--header -->
-  <header class="header no-js">
-    <div class="header__wrapper">
-      <!--header navigation block-->
-      <nav class="header__nav">
-        <!-- header logo block-->
-        <div class="header__nav-top">
-          <a class="header__logo-link-img" href="index.html" aria-label="переход на главную страницу.">
-            <!--image logo adaptive tablet and descktop-->
-            <picture>
-              <source media="(min-width: 1024px)" srcset="./img/logo/logo-descktop/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg">
-              <img class="header__logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Mishka."
-                width="86" height="35">
-            </picture>
-          </a>
-          <!--header button-->
-          <button class="header__button" type="button">
-            <!--header button midlle line-->
-            <span class=" header__button-line"></span>
-            <span class="visually-hidden">кнопка меню.</span>
-          </button>
-        </div>
-        <!--header menu navigation list-->
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--border" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="header__menu-item">
-            <a class="header__menu-link" href="form.html">Вязание на заказ</a>
-          </li>
-        </ul>
-        <ul class="header__user">
-          <li class="header__user-item header__user-ico header__user--border">
-            <a class="header__user-link  header__user-search" href="#" aria-label="поиск по сайту.">
-              <svg class="header__user-link-ico header__user-link-search" width="18" height="19">
-                <use href="./img/sprite.svg#search"></use>
-              </svg>
-              <span class="header__user-serch-text">Поиск по сайту</span>
+  <div class="page__body-header-box">
+    <header class="header no-js">
+      <div class="header__wrapper">
+        <!--header navigation block-->
+        <nav class="header__nav">
+          <!-- header logo block-->
+          <div class="header__nav-top">
+            <a class="header__logo-link-img" href="index.html" aria-label="переход на главную страницу.">
+              <!--image logo adaptive tablet and descktop-->
+              <picture>
+                <source media="(min-width: 1024px)" srcset="./img/logo/logo-descktop/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg">
+                <img class="header__logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Mishka."
+                  width="86" height="35">
+              </picture>
             </a>
-          </li>
-          <li class="header__user-item header__user-ico header__user-cart">
-            <a class="header__user-link" href="#">
-              <svg class="header__user-link-ico header__user-link-cart" width="21" height="18">
-                <use href="./img/sprite.svg#cart"></use>
-              </svg>
-              Корзина: пока пуста
-            </a>
-          </li>
-        </ul>
-        <ul class="header__promo">
-          <li class="header__promo-item">
-            <a class="header__promo-link" href="#">Новые поступления</a>
-          </li>
-          <li class="header__promo-item">
-            <a class="header__promo-link" href="#">Распродажа</a>
-          </li>
-        </ul>
-        <span class="header__nav-delivery">
-          Бесплатная доставка по России
-        </span>
-      </nav>
-  </header>
+            <!--header button-->
+            <button class="header__button" type="button">
+              <!--header button midlle line-->
+              <span class=" header__button-line"></span>
+              <span class="visually-hidden">кнопка меню.</span>
+            </button>
+          </div>
+          <!--header menu navigation list-->
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a class="header__menu-link header__menu-link--border" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="form.html">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="header__user white-stiks">
+            <li class="header__user-item header__user-ico header__user--border">
+              <a class="header__user-link  header__user-search" href="#" aria-label="поиск по сайту.">
+                <svg class="header__user-link-ico header__user-link-search" width="18" height="19">
+                  <use href="./img/sprite.svg#search"></use>
+                </svg>
+                <span class="header__user-serch-text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="header__user-item header__user-ico header__user-cart">
+              <a class="header__user-link" href="#">
+                <svg class="header__user-link-ico header__user-link-cart" width="21" height="18">
+                  <use href="./img/sprite.svg#cart"></use>
+                </svg>
+                Корзина: пока пуста
+              </a>
+            </li>
+          </ul>
+          <ul class="header__promo">
+            <li class="header__promo-item">
+              <a class="header__promo-link" href="#">Новые поступления</a>
+            </li>
+            <li class="header__promo-item">
+              <a class="header__promo-link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <span class="header__nav-delivery">
+            Бесплатная доставка по России
+          </span>
+        </nav>
+    </header>
+  </div>
   <!--main page-->
   <main>
     <!--section categories list product-->
@@ -91,12 +93,22 @@
           <ul class="categories-list">
             <li class="categories-list-item">
               <a href="#" class="categories-list-link categories-list-link--interior">
-                Предметы интерьера
+                <span class="categories-list-title">
+                  Предметы интерьера
+                </span>
+                <svg class="categories-list-img" width="40" height="60">
+                  <use href="./img/sprite.svg#interior"></use>
+                </svg>
               </a>
             </li>
             <li class="categories-list-item">
               <a href="#" class="categories-list-link categories-list-link--toys">
-                Детские игрушки
+                <span class="categories-list-title">
+                  Детские игрушки
+                </span>
+                <svg class="categories-list-img" width="60" height="60">
+                  <use href="./img/sprite.svg#toy"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -199,11 +211,11 @@
                 @misssssiskras
               </span>
             </div>
-            <div class="reviews__wrapper-slide-button">
-              <button class="reviews__slid-button reviews__slid-button-prew" type="button"></button>
-              <button class="reviews__slid-button reviews__slid-button-next" type="button"></button>
-            </div>
           </blockquote>
+          <div class="reviews__wrapper-slide-button">
+            <button class="reviews__slid-button reviews__slid-button-prew" type="button"></button>
+            <button class="reviews__slid-button reviews__slid-button-next" type="button"></button>
+          </div>
           <button class="reviews__button button" type="button">
             написать
           </button>

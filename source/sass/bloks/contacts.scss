@@ -1,7 +1,7 @@
 .contacts {
   margin-bottom: 40px;
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 102px;
   }
 }
@@ -16,20 +16,20 @@
   &::before {
     @media (min-width: $vp-768) {
       position: absolute;
-      content: url("/../img/contacts/flag.svg");
+      content: url("../img/contacts/flag.svg");
       width: 47px;
       height: 81px;
       right: 53px;
       top: -22px;
     }
 
-    @media (min-width: $vp-1024) {
+    @media (min-width: $vp-1150) {
       left: -100px;
       top: 62px;
     }
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     display: grid;
     grid-template-areas:
       "title map"
@@ -61,7 +61,7 @@
     padding: 0 50px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     font-size: 53px;
     line-height: 57px;
 
@@ -88,7 +88,7 @@
     padding: 0 50px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     grid-template-columns: 1fr;
     grid-area: text;
 
@@ -192,7 +192,7 @@
     margin-bottom: 55px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     grid-area: map;
     margin-bottom: 0;
   }
@@ -212,7 +212,7 @@
 .contacts__wrapper-button {
   padding: 0 20px;
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     grid-area: button;
     margin-left: 133px;
   }
@@ -235,7 +235,7 @@
     margin-bottom: 56px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding: 15px 26px;
 
     margin: 0;

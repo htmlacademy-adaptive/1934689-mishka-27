@@ -3,13 +3,14 @@
   background-color: #f9f9f9;
 
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $vp-768) {
     margin-bottom: 43px;
     background-color: $color-snow;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 120px;
   }
 }
@@ -39,14 +40,14 @@
   @media (min-width: $vp-768) {
     background-image: url("../img/categories/tablet/promo-tablet@1x.jpg");
     background-size: 768px 746px;
-    background-position: 0 -65px;
+    background-position: center -65px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/categories/tablet/promo-tablet@2x.jpg");
     }
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     background-image: url("../img/categories/descktop/promo-desktop@1x.jpg");
     background-size: 1150px 746px;
     background-position: 0 -56px;
@@ -83,7 +84,7 @@
     margin-bottom: 371px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     font-size: 53px;
     line-height: 57px;
 
@@ -99,7 +100,7 @@
 
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#63d1bb 50%, #56c3b2 50%);
+  background: linear-gradient($color-downy2 50%, $color-downy2 50%);
 
   @media (min-width: $vp-768) {
     flex-wrap: wrap;
@@ -110,7 +111,7 @@
     background: transparent;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     flex-direction: row;
     width: 1150px;
     margin: 0 auto;
@@ -124,99 +125,43 @@
 }
 
 .categories-list-link--interior {
-  position: relative;
-
-  text-decoration: none;
-
-  display: block;
-
-  font-family: $ff-opensans;
-  font-size: 19px;
-  line-height: 24px;
-  color: $color-default-white;
-  padding: 24px 100px 31px 30px;
-  background-color: $color-downy;
-
-  &::before {
-    position: absolute;
-    content: url("../img/categories/interior.svg");
-    opacity: 0.5;
-    width: 40px;
-    height: 62px;
-
-    right: 36px;
-    bottom: 20px;
-
-    @media (min-width: $vp-768) {
-      bottom: 35px;
-    }
-
-    @media (min-width: $vp-1024) {
-      bottom: 36px;
-    }
-  }
-
-  @media (min-width: $vp-768) {
-    padding: 30px 54% 15% 37px;
-  }
-
-  @media (min-width: $vp-1024) {
-    padding: 29px 60% 10% 40px;
-  }
-}
-
-.categories-list-link--toys {
-  position: relative;
   text-decoration: none;
 
   display: flex;
   justify-content: space-between;
 
+  padding: 24px 36px 18px 30px;
+  background-color: $color-downy;
+
+  @media (min-width: $vp-768) {
+    padding: 25px 36px 43px;
+  }
+}
+
+.categories-list-link--toys {
+  text-decoration: none;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 24px 36px 18px 30px;
+  background-color: $color-downy2;
+
+  @media (min-width: $vp-768) {
+    padding: 25px 36px 43px;
+  }
+}
+
+.categories-list-title {
   font-family: $ff-opensans;
   font-size: 19px;
   line-height: 24px;
   color: $color-default-white;
-  padding: 24px 120px 31px 30px;
-  background-color: $color-puerto-rico;
-
-  &::before {
-    position: absolute;
-    content: url("../img/categories/toy.svg");
-    opacity: 0.5;
-    width: 60px;
-    height: 62px;
-
-    right: 27px;
-    bottom: 20px;
-
-    @media (min-width: $vp-768) {
-      bottom: 27px;
-      right: 33px;
-    }
-
-    @media (min-width: $vp-1024) {
-      bottom: 37px;
-    }
-  }
+  max-width: 130px;
 
   @media (min-width: $vp-768) {
-    padding: 30px 54% 15% 37px;
-  }
-
-  @media (min-width: $vp-1024) {
-    padding: 30px 60% 10% 36px;
-  }
-}
-
-.categories-list-link--text {
-  max-width: 60%;
-
-  @media (min-width: $vp-768) {
-    max-width: 41%;
-  }
-
-  @media (min-width: $vp-1024) {
-    max-width: 35%;
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -225,7 +170,7 @@
   transition: transform 250ms;
 }
 
-.categories-list-link:hover .categories-list-item--img::before {
+.categories-list-link:hover .categories-list-img {
   opacity: 0.7;
 }
 
@@ -233,6 +178,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.categories-list-link:active .categories-list-item--img::before {
+.categories-list-link:active .categories-list-img {
   opacity: 0.3;
 }

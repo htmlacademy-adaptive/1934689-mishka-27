@@ -1,5 +1,6 @@
 .top-weecks {
   position: relative;
+  overflow: hidden;
 
   background-color: $color-default-white;
 
@@ -11,7 +12,7 @@
     margin-bottom: 56px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding-top: 0;
 
     margin-bottom: 165px;
@@ -27,7 +28,7 @@
     margin-bottom: 34px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 35px;
   }
 }
@@ -48,7 +49,7 @@
     line-height: 50px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     order: 1;
 
     font-size: 53px;
@@ -79,7 +80,7 @@
     padding-bottom: 7px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-left: 31px;
     margin-right: 43px;
 
@@ -92,10 +93,10 @@
   @media (min-width: $vp-768) {
     position: relative;
 
-    max-width: 50%;
+    padding-right: 50%;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     position: unset;
 
     margin-left: 177px;
@@ -121,7 +122,7 @@
     max-width: 292px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 51px;
   }
 }
@@ -136,7 +137,7 @@
     max-width: 292px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 114px;
   }
 }
@@ -152,7 +153,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding: 9px 0;
   }
 }
@@ -197,7 +198,7 @@
 
   @media (min-width: $vp-768) {
     position: absolute;
-    right: -334px;
+    right: 0;
     bottom: -2px;
     width: 334px;
     object-fit: cover;
@@ -206,7 +207,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     width: 525px;
     height: 636px;
 
@@ -235,7 +236,7 @@
     margin-right: 46px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-bottom: 34px;
     margin-right: unset;
     text-align: unset;
@@ -253,6 +254,6 @@
   @media (min-width: $vp-768) {
     padding: 14px 99px 12px;
 
-    max-width: 292px;
+    max-width: calc(100% - 30px);
   }
 }

@@ -1,8 +1,5 @@
 .header {
   position: relative;
-  width: 100%;
-  max-width: 1150px;
-  margin: 0 auto;
 
   &::before {
     position: absolute;
@@ -19,7 +16,6 @@
 
   @media (min-width: $vp-768) {
     border: none;
-    overflow: hidden;
   }
 }
 
@@ -31,6 +27,9 @@
 
 .header__wrapper {
   background-color: $color-default-white;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
 
   padding-top: 21px;
   padding-bottom: 19px;
@@ -40,7 +39,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     display: flex;
   }
 }
@@ -65,7 +64,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     grid-template-columns: 450px 1fr 401px;
     grid-template-areas:
       "main-menu logo  user"
@@ -92,7 +91,7 @@
     z-index: 3;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin: 0 auto;
 
     border: none;
@@ -109,14 +108,14 @@
     width: 113px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     width: 150px;
     padding-top: 4px;
   }
 }
 
 .header__logo-link-img {
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     position: absolute;
     top: 5px;
     left: 43.2%;
@@ -250,7 +249,7 @@
     z-index: 1;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding-top: 21px;
   }
 }
@@ -280,7 +279,7 @@
     grid-area: main-menu;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     grid-template-columns: 184px 1fr;
 
     padding-left: 50px;
@@ -290,7 +289,7 @@
 }
 
 .header__menu .header__menu-item:nth-child(2) {
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-left: 31px;
   }
 }
@@ -310,7 +309,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     min-width: unset;
   }
 }
@@ -340,17 +339,7 @@
     padding-right: 50px;
 
     grid-area: user;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 200vw;
-      right: -100vw;
-      height: 100%;
-      background-color: $color-default-white;
-      border-bottom: 1px solid $color-whisper;
-      z-index: -1;
-    }
+    background-color: transparent;
   }
 
   .header__user--border {
@@ -358,13 +347,13 @@
       box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1), inset 1px 0 0 rgba(0, 0, 0, 0.1);
       max-width: 68px;
 
-      @media (min-width: $vp-1024) {
+      @media (min-width: $vp-1150) {
         max-width: unset;
       }
     }
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     background-color: transparent;
     max-width: 100%;
   }
@@ -375,7 +364,7 @@
   display: none;
   background-color: $color-default-white;
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     display: flex;
     flex-wrap: wrap;
     max-width: 316px;
@@ -391,7 +380,7 @@
 }
 
 .header__promo--darck {
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     background-color: $color-white-smoke;
   }
 }
@@ -436,7 +425,7 @@
     left: 23%;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     left: 33px;
   }
 }
@@ -446,7 +435,7 @@
     margin-left: auto;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     max-width: 250px;
     width: 100%;
   }
@@ -459,7 +448,7 @@
     padding: 32px 0 27px 68px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding: 34px 0 27px 68px;
   }
 }
@@ -496,16 +485,16 @@
     max-width: 185px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     font-size: 17px;
-    padding: 34px 0 27px 0;
+    padding: 34px 0 30px 0;
     max-width: 200px;
   }
 }
 
 .header__menu-link--border {
-  @media (min-width: $vp-1024) {
-    box-shadow: 1px 0 0 rgba(0, 0, 0, 0.1);
+  @media (min-width: $vp-1150) {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -555,7 +544,7 @@
     border: none;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     padding: 0;
     font-size: 15px;
     line-height: 21px;

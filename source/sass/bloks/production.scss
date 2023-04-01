@@ -5,7 +5,7 @@
     margin-bottom: 64px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     position: relative;
     margin-bottom: 103px;
   }
@@ -22,7 +22,7 @@
     padding: 0 0 46px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: min-content min-content 1fr;
@@ -61,7 +61,7 @@
       left: -65px;
     }
 
-    @media (min-width: $vp-1024) {
+    @media (min-width: $vp-1150) {
       left: 0;
       top: -1px;
     }
@@ -77,7 +77,7 @@
     padding-top: 49px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin: 47px 85px 30px 26px;
   }
 }
@@ -90,7 +90,7 @@
     margin-bottom: -55px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     align-self: stretch;
     width: 100%;
     margin-left: 0;
@@ -104,7 +104,7 @@
   width: 100%;
   vertical-align: bottom;
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     height: 455px;
   }
 }
@@ -127,7 +127,7 @@
     height: 78px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     width: 100px;
     height: 77px;
   }
@@ -161,7 +161,7 @@
     margin-left: 39px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     margin-right: 57px;
     margin-left: 26px;
     margin-bottom: 52px;
@@ -190,7 +190,7 @@
     font-size: 17px;
   }
 
-  @media (min-width: $vp-1024) {
+  @media (min-width: $vp-1150) {
     max-width: 230px;
     padding: 16px 30px;
     margin-right: 58px;
