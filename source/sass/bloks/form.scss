@@ -8,9 +8,14 @@
   margin-bottom: 17px;
   padding-top: 73px;
 
-  @media (min-width: 768px) {
-    padding-top: 45px;
+  @media (min-width: $vp-768) {
+    padding-top: 38px;
     margin-bottom: 57px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 48px;
+    margin-bottom: 101px;
   }
 }
 
@@ -23,12 +28,18 @@
   margin-bottom: 72px;
   max-width: 320px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 84px;
     max-width: 500px;
     padding: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+    margin-bottom: 112px;
   }
 }
 
@@ -37,7 +48,7 @@
 }
 
 .form__main .container {
-  @media (min-width: 1024px) {
+  @media (min-width: $vp-1150) {
     padding: 0;
   }
 }
@@ -49,38 +60,40 @@
   margin-bottom: 29px;
   color: $color-charcoal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 17px;
     line-height: 30px;
     margin-bottom: 81px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $vp-1150) {
     margin-left: 225px;
     margin-right: 225px;
+    margin-bottom: 79px;
   }
 }
 
 .form__blanck {
   border: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 170px 1fr;
     position: relative;
     margin-top: 0;
   }
 
-  @media (min-width: 1024px) {
-    margin-left: 97px;
-    margin-right: 225px;
+  @media (min-width: $vp-1150) {
+    grid-template-columns: 115px 1fr;
+    margin-left: 111px;
+    margin-right: 158px;
   }
 }
 
 .form__blanck--margin {
   margin-bottom: 20px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-bottom: 68px;
   }
 }
@@ -88,18 +101,23 @@
 .form__blanck--name {
   margin-bottom: 34px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     padding-top: 67px;
     margin-bottom: 49px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-right: 225px;
   }
 }
 
 .form__blanck--tell {
   margin-bottom: 0;
-  padding-bottom: 42px;
+  padding-bottom: 33px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     padding-top: 68px;
+    padding-bottom: 42px;
 
     &::before {
       position: absolute;
@@ -110,18 +128,22 @@
       height: 100%;
       z-index: -1;
 
-      @media (min-width: 1024px) {
+      @media (min-width: $vp-1150) {
         width: 200vw;
         left: -100vw;
       }
     }
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-right: 225px;
   }
 }
 
 .form__blanck--mail {
   margin-bottom: 33px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     &::before {
       position: absolute;
       content: "";
@@ -131,7 +153,7 @@
       height: 100%;
       z-index: -1;
 
-      @media (min-width: 1024px) {
+      @media (min-width: $vp-1150) {
         width: 200vw;
         left: -100vw;
       }
@@ -139,21 +161,30 @@
 
     padding-bottom: 50px;
   }
+
+  @media (min-width: $vp-1150) {
+    margin-right: 225px;
+  }
 }
 
 .form__blanck--textarea {
   padding-top: 7px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-bottom: 47px;
     padding-top: 18px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-right: 225px;
+    margin-bottom: 43px;
   }
 }
 
 .form__blanck--checkbox {
   margin-bottom: 39px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     padding-top: 66px;
     padding-bottom: 68px;
     margin-bottom: 0;
@@ -167,14 +198,14 @@
       height: 100%;
       z-index: -1;
 
-      @media (min-width: 1024px) {
+      @media (min-width: $vp-1150) {
         width: 200vw;
         left: -100vw;
       }
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $vp-1150) {
     grid-template-columns: 115px 1fr;
   }
 }
@@ -204,7 +235,7 @@
     background-color: $color-default-white;
     z-index: -1;
 
-    @media (min-width: 768px) {
+    @media (min-width: $vp-768) {
       content: none;
     }
   }
@@ -219,12 +250,12 @@
     background-color: $color-downy2;
     z-index: -2;
 
-    @media (min-width: 768px) {
+    @media (min-width: $vp-768) {
       content: none;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     float: left;
     margin-bottom: 0;
     line-height: 16px;
@@ -237,7 +268,7 @@
 }
 
 .form__blanck-title--top {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     padding-top: 19px;
   }
 }
@@ -249,7 +280,7 @@
   flex-direction: column;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     gap: 61px;
   }
 }
@@ -259,6 +290,14 @@
   cursor: pointer;
   display: flex;
   margin-bottom: 23px;
+
+  @media (min-width: 344px) {
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+  }
 }
 
 //  radiobox decorate
@@ -282,9 +321,14 @@
     background-color: $color-downy2;
     border-radius: 50%;
     opacity: 0;
+
+    @media (min-width: $vp-1150) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     width: 52px;
     height: 52px;
     top: -18px;
@@ -299,7 +343,7 @@
   padding-left: 59px;
   margin-top: -3px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 19px;
     line-height: 18px;
     padding-left: 77px;
@@ -312,6 +356,14 @@
   opacity: 1;
 }
 
+.form__radio-input:hover + .form__radio-decorate {
+  border: 2px solid $color-downy;
+}
+
+.form__radio-input:active + .form__radio-decorate {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 // checkbox list
 
 .form__checkbox-list {
@@ -320,13 +372,13 @@
   gap: 43px;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 58px 26px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $vp-1150) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 57px 25px;
@@ -358,13 +410,13 @@
     height: 26px;
     opacity: 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: $vp-768) {
       width: 30px;
       height: 13px;
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     width: 52px;
     height: 52px;
     top: -16px;
@@ -380,7 +432,7 @@
   line-height: 18px;
   padding-left: 59px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 19px;
     line-height: 18px;
     padding-left: 79px;
@@ -393,6 +445,14 @@
   opacity: 1;
 }
 
+.form__checkbox-input:hover + .form__checkbox-decorate {
+  border: 2px solid $color-downy;
+}
+
+.form__checkbox-input:active + .form__checkbox-decorate {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
 //  form name input list
 
 .form__input-list {
@@ -402,7 +462,7 @@
   gap: 25px;
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-top: 0;
     margin-left: -2px;
     gap: 43px;
@@ -417,7 +477,7 @@
   flex-direction: column;
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     flex-direction: row;
   }
 }
@@ -428,7 +488,7 @@
   line-height: 18px;
   width: 100%;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     font-size: 19px;
     width: auto;
     margin-right: 25px;
@@ -444,7 +504,7 @@
   padding: 17px 0 14px;
   background-color: $color-default-white;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-top: -23px;
     padding: 21px 19px 12px;
     font-size: 19px;
@@ -454,7 +514,7 @@
 }
 
 .form__input--darck {
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     background-color: #f1f1f1;
   }
 }
@@ -478,8 +538,12 @@
   z-index: 2;
   opacity: 0.3;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     right: 30px;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 12px;
   }
 }
 
@@ -493,8 +557,12 @@
   z-index: 2;
   opacity: 0.3;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     right: 22px;
+  }
+
+  @media (min-width: $vp-1150) {
+    right: 4px;
   }
 }
 
@@ -537,7 +605,7 @@
 
   margin-bottom: 13px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-bottom: 0;
     font-size: 19px;
     line-height: 18px;
@@ -561,7 +629,7 @@
   flex-direction: column-reverse;
   margin-bottom: 55px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -569,8 +637,8 @@
     margin-bottom: 47px;
   }
 
-  @media (min-width: 1024px) {
-    margin-left: 267px;
+  @media (min-width: $vp-1150) {
+    margin-left: 225px;
     margin-right: 225px;
   }
 }
@@ -582,7 +650,7 @@
   padding: 15px 37px;
   color: $color-charcoal;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     max-width: 230px;
     padding: 18px 30px;
     font-size: 17px;
@@ -599,7 +667,7 @@
   color: $color-charcoal;
   margin-bottom: 29px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $vp-768) {
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;

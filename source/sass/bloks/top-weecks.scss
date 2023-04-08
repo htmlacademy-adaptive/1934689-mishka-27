@@ -15,7 +15,7 @@
   @media (min-width: $vp-1150) {
     padding-top: 0;
 
-    margin-bottom: 165px;
+    margin-bottom: 66px;
   }
 }
 
@@ -30,6 +30,7 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 35px;
+    padding-top: 61px;
   }
 }
 
@@ -98,7 +99,7 @@
 
   @media (min-width: $vp-1150) {
     position: unset;
-
+    padding-bottom: 20px;
     margin-left: 177px;
   }
 }
@@ -210,7 +211,7 @@
   @media (min-width: $vp-1150) {
     width: 525px;
     height: 636px;
-
+    bottom: 98px;
     right: 50.4%;
     transform: translateX(101%);
   }
@@ -254,6 +255,10 @@
   @media (min-width: $vp-768) {
     padding: 14px 99px 12px;
 
-    max-width: calc(100% - 30px);
+    max-width: calc(100% - 42px);
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: calc(100% - 58px);
   }
 }

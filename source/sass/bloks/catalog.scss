@@ -21,12 +21,12 @@
   @media (min-width: $vp-768) {
     margin-bottom: 70px;
 
-    padding: 45px 22px 83px;
+    padding: 37px 22px 83px;
   }
 
   @media (min-width: $vp-1150) {
     margin-bottom: 118px;
-    padding: 45px 22px 107px;
+    padding: 48px 22px 107px;
   }
 }
 
@@ -131,11 +131,11 @@
   @media (min-width: $vp-768) {
     font-size: 20px;
     margin-bottom: 7px;
+    max-width: 230px;
   }
 
   @media (min-width: $vp-1150) {
     margin-bottom: 4px;
-    max-width: 230px;
   }
 }
 
