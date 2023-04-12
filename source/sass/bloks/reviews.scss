@@ -136,7 +136,9 @@
 }
 
 .reviews__wrapper-slide-button {
-  margin-bottom: 33px;
+  display: flex;
+  margin-bottom: 38px;
+  gap: 9px;
 
   @media (min-width: $vp-768) {
     position: absolute;
@@ -156,6 +158,8 @@
   background-image: url("../img/reviews/arrow.svg");
   background-repeat: no-repeat;
   background-size: 50px 26px;
+  width: 50%;
+  height: 50px;
 
   border: 1px solid $color-whisper;
 
