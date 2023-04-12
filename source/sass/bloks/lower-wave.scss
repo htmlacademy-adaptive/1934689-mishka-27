@@ -1,4 +1,4 @@
-.vaiwebottomline {
+.lower-wave {
   &::after {
     @media (min-width: $vp-768) {
       position: absolute;
@@ -21,7 +21,7 @@
   }
 }
 
-.vaiwebottomline-small {
+.lower-wave-small {
   &::after {
     content: "";
     display: block;

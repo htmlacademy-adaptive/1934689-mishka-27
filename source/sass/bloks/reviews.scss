@@ -152,23 +152,17 @@
   }
 }
 
-.reviews__slid-button-prew {
+.reviews__slid-button {
   background-image: url("../img/reviews/arrow.svg");
   background-repeat: no-repeat;
   background-size: 50px 26px;
 
   border: 1px solid $color-whisper;
 
-  background-color: $color-default-white;
+  background-color: rgba($color-default-black, 0);
   background-position: 50%;
 
-  transform: rotate(-180deg);
-
-  margin-right: -5px;
-
-  width: 50%;
-  height: 52px;
-
+  margin-left: -5px;
   cursor: pointer;
 
   @media (min-width: $vp-768) {
@@ -178,28 +172,10 @@
   }
 }
 
-.reviews__slid-button-next {
-  background-image: url("../img/reviews/arrow.svg");
-  background-repeat: no-repeat;
-  background-size: 50px 26px;
-
-  border: 1px solid $color-whisper;
-
-  background-color: $color-default-white;
-  background-position: 50%;
-
-  margin-left: -5px;
-
-  width: 50%;
-  height: 52px;
-
-  cursor: pointer;
-
-  @media (min-width: $vp-768) {
-    border: none;
-    width: 50px;
-    height: 26px;
-  }
+.reviews__slid-button--prew {
+  transform: rotate(-180deg);
+  margin-left: 0;
+  margin-right: -5px;
 }
 
 .reviews__slid-button:hover {

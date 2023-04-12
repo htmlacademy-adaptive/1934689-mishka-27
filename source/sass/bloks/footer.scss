@@ -61,7 +61,7 @@
 }
 
 .footer__logo:hover .footer__logo-link {
-  color: #46c1ae;
+  color: $color-puerto-rico;
 }
 
 .footer__logo:active .footer__logo-link {
@@ -75,9 +75,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   margin-bottom: 50px;
   list-style: none;
+  gap: 31px;
 
   max-width: 139px;
   width: 100%;

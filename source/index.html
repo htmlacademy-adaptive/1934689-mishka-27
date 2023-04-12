@@ -13,7 +13,7 @@
   <link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
   <link rel="preload" href="./fonts/OpenSans-regular/OpenSans-Regular.woff2" as="font">
   <link rel="preload" href="./fonts/OpenSans-bold/OpenSans-Bold.woff2" as="font">
-  <link rel="manifest" href="smanifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -27,9 +27,9 @@
           <!-- header logo block-->
           <div class="header__nav-top">
             <a class="header__logo-link-img" href="index.html" aria-label="переход на главную страницу.">
-              <!--image logo adaptive tablet and descktop-->
+              <!--image logo adaptive tablet and desktop-->
               <picture>
-                <source media="(min-width: 1024px)" srcset="./img/logo/logo-descktop/logo-desktop.svg">
+                <source media="(min-width: 1150px)" srcset="./img/logo/logo-desktop/logo-desktop.svg">
                 <source media="(min-width: 768px)" srcset="./img/logo/logo-tablet/logo-tablet.svg">
                 <img class="header__logo" src="./img/logo/logo-mobile/logo-mobile.svg" alt="логотип магазина Mishka."
                   width="86" height="35">
@@ -87,7 +87,7 @@
   <!--main page-->
   <main>
     <!--section categories list product-->
-    <section class="categories vaiwebottomline">
+    <section class="categories lower-wave">
       <div class="container">
         <div class="categories__wrapper">
           <h1 class="categories__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
@@ -117,7 +117,7 @@
       </div>
     </section>
     <!--cection top weecks-->
-    <section class="top-weecks vaiwebottomline-small">
+    <section class="top-weecks lower-wave-small">
       <div class="container">
         <div class="top-weecks__top-wrapper">
           <h2 class="top-weecks__title">Вязаные корзинки</h2>
@@ -145,21 +145,21 @@
             </div>
           </dl>
           <picture>
-            <source type="image/webp" media="(min-width: 1024px)"
-              srcset="./img/top-weecks/descktop/top-descktop@1x.webp 1x, ./img/top-weecks/descktop/top-descktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="./img/top-weecks/desktop/top-desktop@1x.webp 1x, ./img/top-weecks/desktop/top-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="./img/top-weecks/tablet/top-tablet@1x.webp 1x, ./img/top-weecks/tablet/top-tablet@2x.webp 2x">
             <source type="image/webp"
               srcset="./img/top-weecks/mobile/top-mobile@1x.webp, img/top-weecks/mobile/top-mobile@2x.webp 2x">
-            <source media="(min-width: 1024px)"
-              srcset="./img/top-weecks/descktop/top-descktop@1x.jpg 1x, ./img/top-weecks/descktop/top-descktop@2x.jpg 2x">
+            <source media="(min-width: 1150px)"
+              srcset="./img/top-weecks/desktop/top-desktop@1x.jpg 1x, ./img/top-weecks/desktop/top-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
               srcset="./img/top-weecks/tablet/top-tablet@1x.jpg 1x, ./img/top-weecks/tablet/top-tablet@2x.jpg 2x">
             <img class="top-weecks__product" src="./img/top-weecks/mobile/top-mobile@1x.jpg"
               srcset="./img/top-weecks/mobile/top-mobile@2x.jpg" alt="вязанные корзинки." width="260" height="315">
           </picture>
           <span class="top-weecks__product-total">Цена: 990 руб.</span>
-          <button class="top-weecks__button modal__open button" type="button">Заказать</button>
+          <a class="top-weecks__button modal__open button" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -190,7 +190,7 @@
       </div>
     </section>
     <!--reviews section-->
-    <section class="reviews vaiwebottomline-small">
+    <section class="reviews lower-wave-small">
       <div class="container reviews__wrapper">
         <div class="reviews__content-wraper">
           <h2 class="reviews__title">
@@ -214,12 +214,12 @@
             </div>
           </blockquote>
           <div class="reviews__wrapper-slide-button">
-            <button class="reviews__slid-button reviews__slid-button-prew" type="button"></button>
-            <button class="reviews__slid-button reviews__slid-button-next" type="button"></button>
+            <button class="reviews__slid-button reviews__slid-button--prew" type="button"></button>
+            <button class="reviews__slid-button reviews__slid-button--next" type="button"></button>
           </div>
-          <button class="reviews__button button" type="button">
+          <a class="reviews__button button" href="#">
             написать
-          </button>
+          </a>
         </div>
       </div>
     </section>
@@ -243,14 +243,14 @@
           </address>
           <div class="contacts__map">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)"
-                srcset="./img/contacts/descktop/map-descktop@1x.webp 1x, ./img/contacts/descktop/map-descktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="./img/contacts/desktop/map-desktop@1x.webp 1x, ./img/contacts/desktop/map-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="./img/contacts/tablet/map-tablet@1x.webp 1x, ./img/contacts/tablet/map-tablet@2x.webp 2x">
               <source type="image/webp"
                 srcset="./img/contacts/mobile/map-mobile@1x.webp, ./img/contacts/mobile/map-mobile@2x.webp 2x">
-              <source media="(min-width: 1024px)"
-                srcset="./img/contacts/descktop/map-descktop@1x.jpg 1x, ./img/contacts/descktop/map-descktop@2x.jpg 2x">
+              <source media="(min-width: 1150px)"
+                srcset="./img/contacts/desktop/map-desktop@1x.jpg 1x, ./img/contacts/desktop/map-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)"
                 srcset="./img/contacts/tablet/map-tablet@1x.jpg 1x, ./img/contacts/tablet/map-tablet@2x.jpg 2x">
               <img class="contacts__map-offline" src="./img/contacts/mobile/map-mobile@1x.jpg"
@@ -266,9 +266,9 @@
               <use href="./img/sprite.svg#map-pin"></use>
             </svg>
           </div>
-          <button class="contacts__button button" type="button">
+          <a class="contacts__button button" href="#">
             напишите нам
-          </button>
+          </a>
         </div>
       </div>
     </section>

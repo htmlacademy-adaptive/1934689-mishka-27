@@ -5,7 +5,7 @@
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba($color-default-white, 0.9);
   display: none;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   height: 336px;
   background-color: $color-default-white;
   border: 1px solid $color-silver;
-  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+  box-shadow: 0 5px 10px $color-dark-green;
 
   padding: 29px 30px 46px;
 
@@ -99,16 +99,16 @@
 // form radio box condition
 
 .modal__button-input:checked + .modal__input-title {
-  border-color: #63d1bb;
+  border-color: $color-downy;
 }
 
 .modal__submit-button {
   font-size: 17px;
   line-height: 16px;
 
-  color: #ffffff;
+  color: $color-default-white;
 
-  background: #63d1bb;
+  background: $color-downy;
 
   border: none;
 }

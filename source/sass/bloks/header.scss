@@ -288,7 +288,7 @@
   }
 }
 
-.header__menu .header__menu-item:nth-child(2) {
+.header__menu .header__menu-item:nth-child(2n) {
   @media (min-width: $vp-1150) {
     margin-left: 31px;
   }

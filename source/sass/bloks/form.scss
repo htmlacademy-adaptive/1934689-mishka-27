@@ -515,12 +515,12 @@
 
 .form__input--darck {
   @media (min-width: $vp-768) {
-    background-color: #f1f1f1;
+    background-color: $color-white-smoke;
   }
 }
 
 .form__input::placeholder {
-  color: rgb(0, 0, 0, 0.3);
+  color: rgba($color-default-black, 0.3);
   font-size: 17px;
   line-height: 18px;
   font-family: $ff-opensans;
@@ -537,6 +537,7 @@
   bottom: 16px;
   z-index: 2;
   opacity: 0.3;
+  pointer-events: none;
 
   @media (min-width: $vp-768) {
     right: 30px;
@@ -556,6 +557,7 @@
   bottom: 14px;
   z-index: 2;
   opacity: 0.3;
+  pointer-events: none;
 
   @media (min-width: $vp-768) {
     right: 22px;
