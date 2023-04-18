@@ -1,0 +1,114 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba($color-default-white, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal__content {
+  width: 320px;
+  height: 336px;
+  background-color: $color-default-white;
+  border: 1px solid $color-silver;
+  box-shadow: 0 5px 10px $color-dark-green;
+
+  padding: 29px 30px 46px;
+
+  @media (min-width: $vp-768) {
+    width: 566px;
+    height: 336px;
+    padding: 38px 92px 46px;
+  }
+}
+
+.modal__title {
+  font-family: $ff-opensans;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $color-default-black;
+
+  margin-bottom: 14px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 11px;
+  }
+}
+
+// modal fildset
+
+.modal__size-filter {
+  border: none;
+
+  font-family: $ff-opensans;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+
+  color: $color-charcoal;
+
+  text-align: center;
+}
+
+.modal__button-list {
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 260px;
+  width: 100%;
+  gap: 7px;
+
+  margin-top: 22px;
+  margin-bottom: 31px;
+
+  @media (min-width: $vp-768) {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.modal__input-title {
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  width: 100%;
+  display: block;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-charcoal;
+  padding: 17px 18px 16px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+
+// form radio box condition
+
+.modal__button-input:checked + .modal__input-title {
+  border-color: $color-downy;
+}
+
+.modal__submit-button {
+  font-size: 17px;
+  line-height: 16px;
+
+  color: $color-default-white;
+
+  background: $color-downy;
+
+  border: none;
+}
