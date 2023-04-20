@@ -15,12 +15,6 @@
   }
 }
 
-// container
-
-.categories .container {
-  padding: 0;
-}
-
 // categories wrapper
 
 .categories__wrapper {
@@ -53,6 +47,8 @@
 }
 
 .categories__container {
+  padding: 0;
+
   @media (min-width: $vp-1150) {
     background-image: url("../img/categories/desktop/promo-desktop@1x.jpg");
     background-size: cover;
@@ -101,7 +97,7 @@
   }
 }
 
-.categories-list {
+.categories__list {
   list-style: none;
 
   display: flex;
@@ -118,19 +114,26 @@
   }
 
   @media (min-width: $vp-1150) {
-    flex-direction: row;
-    width: 1150px;
-    margin: 0 auto;
+    display: grid;
+    max-width: unset;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-.categories-list-item {
+.categories__list-item {
   @media (min-width: $vp-768) {
     min-width: 50%;
+    background-color: #63d1bb;
   }
 }
 
-.categories-list-link--interior {
+.categories__list-item:nth-child(2) {
+  @media (min-width: $vp-768) {
+    background-color: #56c3b2;
+  }
+}
+
+.categories__list-link-interior {
   text-decoration: none;
 
   display: flex;
@@ -145,7 +148,7 @@
   }
 }
 
-.categories-list-link--toys {
+.categories__list-link-toys {
   text-decoration: none;
 
   display: flex;
@@ -160,7 +163,7 @@
   }
 }
 
-.categories-list-title {
+.categories__list-title {
   font-family: $ff-opensans;
   font-size: 19px;
   line-height: 24px;
@@ -173,18 +176,18 @@
   }
 }
 
-.categories-list-link:hover {
+.categories__list-link:hover {
   transform: translateY(-5px);
 }
 
-.categories-list-link:hover .categories-list-img {
+.categories__list-link:hover .categories__list-img {
   opacity: 0.7;
 }
 
-.categories-list-link:active {
+.categories__list-link:active {
   color: rgba($color-default-white, 0.3);
 }
 
-.categories-list-link:active .categories-list-img {
+.categories__list-link:active .categories__list-img {
   opacity: 0.3;
 }

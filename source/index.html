@@ -91,23 +91,23 @@
       <div class="categories__container container">
         <div class="categories__wrapper">
           <h1 class="categories__title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
-          <ul class="categories-list">
-            <li class="categories-list-item">
-              <a href="#" class="categories-list-link categories-list-link--interior">
-                <span class="categories-list-title">
+          <ul class="categories__list">
+            <li class="categories__list-item">
+              <a href="#" class="categories__list-link categories__list-link-interior">
+                <span class="categories__list-title">
                   Предметы интерьера
                 </span>
-                <svg class="categories-list-img" width="40" height="60">
+                <svg class="categories__list-img" width="40" height="60">
                   <use href="./img/sprite.svg#interior"></use>
                 </svg>
               </a>
             </li>
-            <li class="categories-list-item">
-              <a href="#" class="categories-list-link categories-list-link--toys">
-                <span class="categories-list-title">
+            <li class="categories__list-item">
+              <a href="#" class="categories__list-link categories__list-link-toys">
+                <span class="categories__list-title">
                   Детские игрушки
                 </span>
-                <svg class="categories-list-img" width="60" height="60">
+                <svg class="categories__list-img" width="60" height="60">
                   <use href="./img/sprite.svg#toy"></use>
                 </svg>
               </a>
@@ -159,7 +159,7 @@
               srcset="./img/top-weecks/mobile/top-mobile@2x.jpg" alt="вязанные корзинки." width="260" height="315">
           </picture>
           <span class="top-weecks__product-total">Цена: 990 руб.</span>
-          <a class="top-weecks__button modal__open button" href="#">Заказать</a>
+          <a class="top-weecks__button modal-open button" href="#">Заказать</a>
         </div>
       </div>
     </section>
@@ -214,8 +214,10 @@
             </div>
           </blockquote>
           <div class="reviews__wrapper-slide-button">
-            <button class="reviews__slid-button reviews__slid-button--prew" type="button"></button>
-            <button class="reviews__slid-button reviews__slid-button--next" type="button"></button>
+            <button class="reviews__slid-button reviews__slid-button--prew" type="button"
+              aria-label="показать предыдущий отзыв."></button>
+            <button class="reviews__slid-button reviews__slid-button--next" type="button"
+              aria-label="показать следующий отзыв."></button>
           </div>
           <a class="reviews__button button" href="#">
             написать
@@ -225,7 +227,7 @@
     </section>
     <!--contacts section-->
     <section class="contacts">
-      <div class="container">
+      <div class="contacts__container container">
         <div class="contacts__wrapper">
           <h2 class="contacts__title">
             Контакты
@@ -320,7 +322,7 @@
   <!-- modal window -->
   <div class="modal">
     <div class="modal__content">
-      <h2 class="modal__title">добавить в&nbsp;корзаину</h2>
+      <h2 class="modal__title">добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="modal__size-filter">
           <legend class="modal__size-title">Выберите размер:</legend>

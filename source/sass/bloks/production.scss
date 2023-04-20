@@ -107,7 +107,7 @@
   vertical-align: bottom;
 
   @media (min-width: $vp-1150) {
-    height: 455px;
+    height: 100%;
   }
 }
 
@@ -158,9 +158,12 @@
     order: 2;
 
     font-size: 15px;
+    line-height: 30px;
 
-    margin-bottom: 49px;
+    margin-bottom: 38px;
     margin-left: 39px;
+
+    max-width: 591px;
   }
 
   @media (min-width: $vp-1150) {
