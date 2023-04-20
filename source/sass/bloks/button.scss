@@ -28,6 +28,18 @@
   color: $color-default-white;
 }
 
-.button:active {
+.button:focus {
+  background-color: $color-charcoal;
   color: rgba($color-default-white, 0.3);
+}
+
+.button:active {
+  background-color: $color-charcoal;
+  color: rgba($color-default-white, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.3;
+
+  pointer-events: none;
 }

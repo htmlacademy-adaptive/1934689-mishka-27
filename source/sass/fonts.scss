@@ -4,15 +4,8 @@
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/OpenSans-regular/OpenSans-Regular.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/OpenSans-regular/OpenSans-Regular.woff2") format("woff2");
+  src: url("../fonts/OpenSans-regular/OpenSans-Regular.woff2") format("woff2"),
+    url("../fonts/OpenSans-regular/OpenSans-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -20,14 +13,7 @@
   font-family: "OpenSans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/OpenSans-bold/OpenSans-Bold.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/OpenSans-bold/OpenSans-Bold.woff2") format("woff2");
+  src: url("../fonts/OpenSans-bold/OpenSans-Bold.woff2") format("woff2"),
+    url("../fonts/OpenSans-bold/OpenSans-Bold.woff") format("woff");
   font-display: swap;
 }

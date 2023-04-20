@@ -18,7 +18,7 @@ document.addEventListener('keydown', (evt) => {
 
 // modal open window
 
-  const modalButtons = document.querySelectorAll('.modal__open');
+  const modalButtons = document.querySelectorAll('.modal-open');
   const modal = document.querySelector('.modal');
   const modalCloseButton = document.querySelector('.modal__submit-button');
   const modalFormInput = document.querySelector('.modal__button-input');

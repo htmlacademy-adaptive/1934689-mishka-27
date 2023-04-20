@@ -30,7 +30,7 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 35px;
-    padding-top: 61px;
+    padding-top: 63px;
   }
 }
 
@@ -100,7 +100,7 @@
   @media (min-width: $vp-1150) {
     position: unset;
     padding-bottom: 20px;
-    margin-left: 177px;
+    margin-left: 173px;
   }
 }
 
@@ -125,6 +125,7 @@
 
   @media (min-width: $vp-1150) {
     margin-bottom: 51px;
+    max-width: 296px;
   }
 }
 
@@ -139,7 +140,7 @@
   }
 
   @media (min-width: $vp-1150) {
-    margin-bottom: 114px;
+    margin-bottom: 110px;
   }
 }
 
@@ -155,7 +156,8 @@
   }
 
   @media (min-width: $vp-1150) {
-    padding: 9px 0;
+    padding: 7px 0 12px 0;
+    margin-left: 2px;
   }
 }
 
@@ -209,9 +211,9 @@
   }
 
   @media (min-width: $vp-1150) {
-    width: 525px;
-    height: 636px;
-    bottom: 98px;
+    width: 524px;
+    height: 87%;
+    bottom: 96px;
     right: 50.4%;
     transform: translateX(101%);
   }
